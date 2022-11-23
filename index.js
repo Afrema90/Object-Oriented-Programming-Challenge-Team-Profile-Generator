@@ -3,6 +3,7 @@ const fs = require('fs');
 const Manager = require(' ./lib/Manager');
 const Engineer = require(' ./lib/Engineer');
 const Intern = require('./lib/Intern');
+const Employee = require('./lib/Employee');
 const generateHtml = require('./src/page-template');
 
 const teamMembers = [];
@@ -62,7 +63,7 @@ const generateEngineer = () => {
         {
             type: "list",
             name: "team",
-            message: "Do you want to add a team member? Please select their role.",
+            message: "which team member do you want to add? Please select their role.",
             choices: ["Engineer", "Intern", "Generate Team"],
         }
     ])
@@ -110,7 +111,7 @@ const generateIntern = () => {
         {
             type: "list",
             name: "team",
-            message: "Do you want to add a team member? Please select their role.",
+            message: "which team member do you want to add? Please select their role.",
             choices: ["Engineer", "Intern", "Generate Team"],
         }
     ])
