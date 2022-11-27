@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Manager = require(' ./lib/Manager');
-const Engineer = require(' ./lib/Engineer');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Employee = require('./lib/Employee');
-const generateHtml = require('./src/page-template');
+const generateHtml = require('./src/template');
 
 const teamMembers = [];
 
@@ -20,7 +20,7 @@ const generateManager = [{
 },
 {
     type: 'Input',
-    name: 'emil',
+    name: 'email',
     message: "what is the Manager's email address?"
 },
 {
@@ -29,10 +29,10 @@ const generateManager = [{
     message: "What is the Manager's office number?"
 },
 {
-    type: 'List',
-    name: 'role',
-    message: "What is the employee's role?",
-    choices: ['Manager', 'Engineer', 'Intern']
+    type: 'list',
+    name: 'team',
+    message: "which team member do you want to add? Please select their role.",
+    choices: ["Engineer", "Intern", "Generate Team"]
 }
 ];
 
