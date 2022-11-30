@@ -16,11 +16,19 @@ function generateHtml(employees){
 
         }
         html+=`
-        <div>
-        <h1>${employee.name}</h1>
-        <h2>${employee.id}</h2>
-        <h2>${employee.email}</h2>
-        <h2>${special}</h2>
+     
+        <div class= "container">
+            <div class="row">
+            <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">Information</h5>
+            <p class="card-text">${employee.name}</p>
+            <p class="card-text">${employee.id}</p>
+            <p class="card-text">${employee.email}</p>
+            <p class="card-text">${special}</p>
+            </div>
+            </div>
+            </div>
         </div>
         `
     }
@@ -31,9 +39,15 @@ function generateHtml(employees){
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-    < link rel="src," href="/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">My Team</h1>
+    </div>
+  </div>
        ${html} 
     </body>
     </html>`
