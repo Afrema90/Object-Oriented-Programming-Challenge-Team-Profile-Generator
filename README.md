@@ -7,8 +7,7 @@ Run the following command from the terminal:
 
 npm i
 Deployment Video Link
- https://afrema90.github.io/Object-Oriented-Programming-Challenge-Team-Profile-Generator/<img width="1470" alt="Screenshot 2022-12-02 at 10 59 52 PM" src="https://user-images.githubusercontent.com/112598840/205422890-4dbf587e-5c46-4c29-a050-1f908d4e7739.png">
-
+ https://afrema90.github.io/Object-Oriented-Programming-Challenge-Team-Profile-Generator/
 User Story
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
