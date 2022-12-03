@@ -3,33 +3,33 @@ const Engineer = require("../lib/Engineer");
 const Intern = require("../lib/Intern");
 //let employees = [{name:"genarateManager",id:1, ... other properties}];
 
-function generateHtml(employees){
+function generateHtml(employees) {
     let html = ''
     for (let i = 0; i < employees.length; i++) {
         const employee = employees[i];
         let special
-        if(employee.getRole()==='Manager'){
+        if (employee.getRole() === 'Manager') {
             special = employee.getOfficeNumber()
-        }else if(employee.getRole()==='Engineer'){
+        } else if (employee.getRole() === 'Engineer') {
             special = employee.getGitHub()
-        }else{special = employee.getSchool()
+        } else {
+            special = employee.getSchool()
 
         }
-        html+=`
-     
-        <div class= "container">
-            <div class="row">
-            <div class="card" style="width: 18rem;">
+        html += `
+
+        <div class="col">
+          <div class="card">
             <div class="card-body">
-            <h5 class="card-title">Information</h5>
-            <p class="card-text">${employee.name}</p>
-            <p class="card-text">${employee.id}</p>
-            <p class="card-text">${employee.email}</p>
-            <p class="card-text">${special}</p>
+              <h5 class="card-title">Employee Information</h5>
+              <p class="card-text">${employee.name}</p>
+              <p class="card-text">${employee.id}</p>
+              <p class="card-text">${employee.email}</p>
+              <p class="card-text">${special}</p>
             </div>
-            </div>
-            </div>
+          </div>
         </div>
+
         `
     }
     return `<!DOCTYPE html>
@@ -46,9 +46,11 @@ function generateHtml(employees){
     <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">My Team</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+      ${html}
+      </div>
     </div>
   </div>
-       ${html} 
     </body>
     </html>`
 }
