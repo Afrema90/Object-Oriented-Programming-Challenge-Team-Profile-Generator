@@ -5,11 +5,11 @@ This weeks Homework we are to use node.js and command line to creat application 
 Instulation 
 Run the following command from the terminal:
 
-npm i
+npm i to install the packages
 Deployment Video Link
  https://afrema90.github.io/Object-Oriented-Programming-Challenge-Team-Profile-Generator/
  
- I did this Home work with the help of my study group David And my tutor chris B and my proffersor Chris R. it took me a while but i fanaly have it done .
+ I did this Home work with the help of my study group David And my tutor chris B and my proffersor Chris R. it took me a while but i finaly have it done .
 User Story
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
