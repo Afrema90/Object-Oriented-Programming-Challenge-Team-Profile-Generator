@@ -7,7 +7,7 @@ Run the following command from the terminal:
 
 npm i
 Deployment Video Link
-https://drive.google.com/file/d/1qXHubJPjsUSmAggohIGQ9dR8Tp3Gklf6/view
+ https://afrema90.github.io/Object-Oriented-Programming-Challenge-Team-Profile-Generator/<img width="1470" alt="Screenshot 2022-12-02 at 10 59 52 PM" src="https://user-images.githubusercontent.com/112598840/205422890-4dbf587e-5c46-4c29-a050-1f908d4e7739.png">
 
 User Story
 AS A manager
@@ -34,3 +34,5 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
 Mock up
+https://drive.google.com/file/d/1qXHubJPjsUSmAggohIGQ9dR8Tp3Gklf6/view
+<img width="1470" alt="Screenshot 2022-12-02 at 10 59 52 PM" src="https://user-images.githubusercontent.com/112598840/205422904-6a4f5000-78a7-4f6e-b6e0-b54781529771.png">
